@@ -1,6 +1,7 @@
 <manifest>
 <contactinfo bugurl="go/repo-bug"/>
 <remote name="aosp" fetch="https://android.googlesource.com/" review="https://android.googlesource.com/"/>
+<remote name="github" fetch="ssh://git@github.com"/>
 <default revision="master" remote="aosp" sync-j="4"/>
 <superproject name="kernel/superproject" remote="aosp" revision="u-boot-mainline"/>
 <project path="bootable/libbootloader" name="platform/bootable/libbootloader" revision="ccf35bfd516301ce6efd95783a6c7bd4ca556e55"/>
@@ -20,7 +21,7 @@
 <project path="external/stardoc" name="platform/external/stardoc" revision="398e266839a9d590a3c4fe4e9bc382bc2607a06e"/>
 <project path="external/swig" name="platform/external/swig" revision="0ffab894f917fcbbd031eaab870fbabaefe5daaa"/>
 <project path="external/zlib" name="platform/external/zlib" revision="4d02aae00087d32d4cd7e74c038d7256dc544fa9"/>
-<project path="u-boot" name="platform/external/u-boot" revision="9b03edb275b6dd7f0433fb3f470dac3c1f1b8c80">
+<project path="u-boot" name="svlad-90/u-boot" remote="github" revision="xenvm-trout-dev">
 <linkfile dest=".source_date_epoch_dir" src="."/>
 <linkfile dest="WORKSPACE" src="bazel.WORKSPACE"/>
 </project>
